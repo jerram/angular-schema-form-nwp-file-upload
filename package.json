@@ -5,7 +5,7 @@
   "main": "dist/schema-form-file.min.js",
   "devDependencies": {
     "add-stream": "^1.0.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^1.8.0",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^3.2.2",
@@ -49,5 +49,8 @@
   "bugs": {
     "url": "https://github.com/saburab/angular-schema-form-nwp-file-upload/issues"
   },
-  "homepage": "https://github.com/saburab/angular-schema-form-nwp-file-upload#readme"
+  "homepage": "https://github.com/saburab/angular-schema-form-nwp-file-upload#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  }
 }
