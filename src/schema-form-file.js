@@ -92,6 +92,7 @@ angular
 
             scope.selectFile  = function (file) {
                scope.picFile = file;
+               scope.$emit('addImage', file.name);
             };
             scope.selectFiles = function (files) {
                scope.picFiles = files;
@@ -123,6 +124,7 @@ angular
                      var result = scope.form.post ? scope.form.post(response.data) : response.data;
                      ngModel.$setViewValue(result);
                      ngModel.$commitViewValue();
+                     scope.$emit('doneImage', file.name);
                   }, function (response) {
                      if (response.status > 0) {
                         scope.errorMsg = response.status + ': ' + response.data;
